@@ -3,7 +3,8 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 const d = new Date()
 function giveNumber(){
-  console.log("Works")
+  let text = document.getElementById("Name").textContent;
+  console.log(text)
 }
 export default function Home() {
   return (
@@ -18,8 +19,8 @@ export default function Home() {
         <p className="description">
           Skriv dit navn og tryk på knappen!
         </p>
-         <input onclick="giveNumber()" type="text" id="Name" name="Name">Navn</input>
-        <button className="button">
+         <input type="text" id="Name" name="Name">Navn</input>
+        <button onclick="giveNumber()" className="button">
           Find Plads
         </button>
       </main>
