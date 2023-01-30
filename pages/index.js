@@ -8,6 +8,7 @@ function giveNumber(){
   document.getElementById("Number").textContent = text;
   console.log(text);
 }
+ document.getElementById("button").onclick = "giveNumber()";
 export default function Home() {
   return (
     <div className="container">
@@ -29,4 +30,3 @@ export default function Home() {
     </div>
   )
 }
-document.getElementById("button").onclick="giveNumber()";
