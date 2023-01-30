@@ -4,7 +4,7 @@ import Footer from '@components/Footer'
 const d = new Date()
 function giveNumber(){
   let text = document.getElementById("Name").value;
-  document.getElementById("Number").value = text;
+  document.getElementById("Number").innerHtml = text;
 }
 export default function Home() {
   return (
