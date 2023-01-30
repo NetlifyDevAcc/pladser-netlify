@@ -3,8 +3,8 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 const d = new Date()
 function giveNumber(){
-  let text = document.getElementById("Name").textContent;
-  document.getElementById("Number").textContent = text;
+  let text = document.getElementById("Name").value;
+  document.getElementById("Number").value = text;
 }
 export default function Home() {
   return (
