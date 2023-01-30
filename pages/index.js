@@ -6,6 +6,7 @@ const array = ["Vlademar","Gustav","Leonard","Lukas","Frederik","Oscar","August"
 function giveNumber(){
   let text = document.getElementById("Name").value;
   document.getElementById("Number").textContent = text;
+  console.log(text);
 }
 export default function Home() {
   return (
@@ -21,8 +22,7 @@ export default function Home() {
           Skriv dit navn og tryk på knappen!
         </p>
          <input type="text" id="Name" name="Name"></input>
-        <button onclick="let text = document.getElementById('Name').value;
-  document.getElementById('Number').textContent = text;">Find Plads</button>
+        <button onclick="giveNumber()">Find Plads</button>
         <label type="text" id="Number">Plads Nummer</label>
       </main>
 
