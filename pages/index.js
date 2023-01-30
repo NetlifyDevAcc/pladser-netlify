@@ -13,7 +13,7 @@ export default function Home() {
       <main>
         <Header title="Find din plads!" />
         <p className="description">
-          Click type your name and click the button!
+          Skriv dit navn og tryk på knappen!
         </p>
       </main>
 
