@@ -11,9 +11,9 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Welcome to my app!" />
+        <Header title="Find din plads!" />
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          Click type your name and click the button!
         </p>
       </main>
 
