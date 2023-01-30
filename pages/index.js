@@ -4,7 +4,7 @@ import Footer from '@components/Footer'
 const d = new Date()
 function giveNumber(){
   let text = document.getElementById("Name").textContent;
-  console.log(text)
+  document.getElementById("Number").textContent = text;
 }
 export default function Home() {
   return (
@@ -19,10 +19,11 @@ export default function Home() {
         <p className="description">
           Skriv dit navn og tryk på knappen!
         </p>
-         <input type="text" id="Name" name="Name">Navn</input>
+         <input type="text" id="Name" name="Name"></input>
         <button onclick="giveNumber()" className="button">
           Find Plads
         </button>
+        <label type="text" id="Number" name="Name">Navn</label>
       </main>
 
       <Footer />
