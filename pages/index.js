@@ -20,7 +20,7 @@ export default function Home() {
           Skriv dit navn og tryk på knappen!
         </p>
          <input type="text" id="Name" name="Name"></input>
-        <button onclick="giveNumber()" className="button">
+        <button onclick="giveNumber()">
           Find Plads
         </button>
         <label type="text" id="Number" name="Name">Navn</label>
