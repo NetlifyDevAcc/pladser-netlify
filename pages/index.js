@@ -15,6 +15,9 @@ export default function Home() {
         <p className="description">
           Skriv dit navn og tryk på knappen!
         </p>
+        <input className="input">
+          Navn
+        </input>
         <button className="button">
           Find Plads
         </button>
