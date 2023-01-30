@@ -23,7 +23,7 @@ export default function Home() {
         <button onclick="giveNumber()">
           Find Plads
         </button>
-        <label type="text" id="Number" name="Name">Navn</label>
+        <label type="text" id="Number" name="Name">Nummer</label>
       </main>
 
       <Footer />
