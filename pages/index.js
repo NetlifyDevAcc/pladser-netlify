@@ -15,7 +15,6 @@ export default function Home() {
         <title>Plads finder!</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main>
         <Header title="Find din plads!" />
         <p className="description">
