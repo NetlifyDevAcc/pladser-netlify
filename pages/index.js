@@ -21,7 +21,7 @@ export default function Home() {
           Skriv dit navn og tryk på knappen!
         </p>
          <input type="text" id="Name" name="Name"></input>
-        <button onclick="giveNumber()">Find Plads</button>
+        <button onclick="giveNumber()" id="button">Find Plads</button>
         <label type="text" id="Number">Plads Nummer</label>
       </main>
 
@@ -29,3 +29,4 @@ export default function Home() {
     </div>
   )
 }
+document.getElementById("button").onclick="giveNumber()";
