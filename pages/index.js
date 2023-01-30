@@ -1,18 +1,13 @@
-
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 const d = new Date()
 const array = ["Vlademar","Gustav","Leonard","Lukas","Frederik","Oscar","August","Hugo","Kristian","Adam","Emil","Victor","Linus","Ida","Augusta","Alberte","Liva","Siri","Lucca","Kamma","Linnea"]
-
+function giveNumber(){
+  let text = document.getElementById("Name").value;
+  document.getElementById("Number").textContent = text;
+}
 export default function Home() {
-  const [number, setNumber] = useState("");
-
-  const giveNumber = () => {
-    const name = document.getElementById("Name").value;
-    document.getElementById("Number").textContent = text;document.getElementById("Number").textContent = text;
-  }
-
   return (
     <div className="container">
       <Head>
@@ -25,16 +20,14 @@ export default function Home() {
         <p className="description">
           Skriv dit navn og tryk på knappen!
         </p>
-        <input type="text" id="Name" name="Name"></input>
-        <button onClick={giveNumber}>
+         <input type="text" id="Name" name="Name"></input>
+        <button onclick="giveNumber()">
           Find Plads
         </button>
-        <label type="text" id="Number" name="Number">{number}</label>
+        <label type="text" id="Number" name="Name">Nummer</label>
       </main>
 
       <Footer />
     </div>
   )
 }
-
-
