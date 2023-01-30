@@ -8,7 +8,6 @@ function giveNumber(){
   document.getElementById("Number").textContent = text;
   console.log(text);
 }
- document.getElementById("button").onclick = "giveNumber()";
 export default function Home() {
   return (
     <div className="container">
@@ -22,7 +21,7 @@ export default function Home() {
           Skriv dit navn og tryk på knappen!
         </p>
          <input type="text" id="Name" name="Name"></input>
-        <button onclick="giveNumber()" id="button">Find Plads</button>
+        <button onclick="giveNumber()" id="knap">Find Plads</button>
         <label type="text" id="Number">Plads Nummer</label>
       </main>
 
