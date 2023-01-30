@@ -24,7 +24,7 @@ export default function Home() {
         <button onclick="giveNumber()">
           Find Plads
         </button>
-        <label type="text" id="Number">Nummer</label>
+        <label type="text" id="Number">Sæde Nummer</label>
       </main>
 
       <Footer />
