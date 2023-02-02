@@ -1,12 +1,18 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
-const d = new Date()
 let array = ["Valdemar","Gustav","Leonard","Lukas","Frederik","Oscar","August","Hugo","Kristian","Adam","Emil","Victor","Linus","Ida","Augusta","Alberte","Liva","Siri","Lucca","Kamma","Linnea"]
-
+var seed = 1
+function random() {
+    var x = Math.sin(seed++) * 10000;
+    return x - Math.floor(x);
+}
 function giveNumber() {
+  var date = new Date()
+  var seed = date.getDate();
+  var shuffledArray = array.sort((a, b) => 0.5 - random())
   let text = document.getElementById("Name").value;
-  document.getElementById("Number").textContent = text;
+  document.getElementById("Number").textContent = shuffeldArray.findIndex(text);
   console.log(text);
 }
 
