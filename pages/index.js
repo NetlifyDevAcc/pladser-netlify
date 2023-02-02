@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Header from '@components/Header'
-import Footer from '@components/Footer'var seed = 10
+import Footer from '@components/Footer'
+var seed = 10
 function random() {
     var x = Math.sin(seed++) * 10000;
     return x - Math.floor(x);
