@@ -4,11 +4,6 @@ import Footer from '@components/Footer'
 const d = new Date()
 alert("handicap");
 const array = ["Valdemar","Gustav","Leonard","Lukas","Frederik","Oscar","August","Hugo","Kristian","Adam","Emil","Victor","Linus","Ida","Augusta","Alberte","Liva","Siri","Lucca","Kamma","Linnea"]
-function giveNumber(){
-  let text = document.getElementById("Name").value;
-  document.getElementById("Number").textContent = text;
-    alert(text);
-}
 export default function Home() {
   return (
     <div className="container">
