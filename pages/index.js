@@ -23,7 +23,8 @@ export default function Home() {
          <input type="text" id="Name" name="Name"></input>
         <button onclick="giveNumber();" id="knap">Find Plads</button>
         <label type="text" id="Number">Plads Nummer</label>
-        <label type="text">Test 0.1</label>
+        <label type="text">Test 0.2</label>
+        <button onclick="alert('Button was clicked!')">Click me</button>
       </main>
 
       <Footer />
