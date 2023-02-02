@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 let array = ["Valdemar","Gustav","Leonard","Lukas","Frederik","Oscar","August","Hugo","Kristian","Adam","Emil","Victor","Linus","Ida","Augusta","Alberte","Liva","Siri","Lucca","Kamma","Linnea"]
-var seed = var seed = date.getDate()/100;
+var seed = date.getDate()/100;
 function random() {
     var x = Math.sin(seed++) * 10000;
     return x - Math.floor(x);
