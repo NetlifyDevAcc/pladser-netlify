@@ -3,7 +3,6 @@ import Header from '@components/Header'
 import Footer from '@components/Footer'
 const d = new Date()
 let array = ["Valdemar","Gustav","Leonard","Lukas","Frederik","Oscar","August","Hugo","Kristian","Adam","Emil","Victor","Linus","Ida","Augusta","Alberte","Liva","Siri","Lucca","Kamma","Linnea"]
-const button = document.getElementById("myButton");
 
 
 function giveNumber(){
@@ -28,7 +27,7 @@ export default function Home() {
         <script>
             const button = document.getElementById("myButton");
             button.onclick = function() {
-            alert("Button was clicked");
+            alert("Button was clicked")
           };
          </script>
       </main>
