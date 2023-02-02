@@ -22,9 +22,10 @@ export default function Home() {
         <p className="description">
           Skriv dit navn og tryk på knappen!
         </p>
-        <input type="text" id="Name" name="Name"></input>
-        <button onClick={() => alert('Fucking work')}>Click me</button>
-        <form></form>
+        <input type="text" id="Name"></input> 
+        <button onClick={() => giveNumber()}>Find Plads!</button>
+        <label type="text" id="Number">Plads Nummer!</label>
+        
       </main>
 
       <Footer />
