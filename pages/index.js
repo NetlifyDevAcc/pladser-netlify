@@ -6,7 +6,7 @@ const array = ["Valdemar","Gustav","Leonard","Lukas","Frederik","Oscar","August"
 function giveNumber(){
   let text = document.getElementById("Name").value;
   document.getElementById("Number").textContent = text;
-  console.log(text);
+    alert(text);
 }
 export default function Home() {
   return (
