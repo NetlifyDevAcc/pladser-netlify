@@ -21,9 +21,6 @@ export default function Home() {
           Skriv dit navn og tryk på knappen!
         </p>
          <input type="text" id="Name" name="Name"></input>
-        <button onclick="giveNumber();" id="knap">Find Plads</button>
-        <label type="text" id="Number">Plads Nummer</label>
-        <label type="text">Test 0.3</label>
         <button id="myButton">Click me</button>
         <script>
             const button = document.getElementById("myButton");
@@ -31,7 +28,6 @@ export default function Home() {
             alert("Button was clicked");
           };
          </script>
-        <button onclick="alert('Button was clicked!')">Click me</button>
       </main>
 
       <Footer />
