@@ -32,7 +32,7 @@ export default function Home() {
           Skriv dit navn og tryk på knappen!
         </p>
         <input type="text" id="Name"></input> 
-        <button onClick={() => giveNumber()}>Find Plads!</button>
+        <button onClick={() => giveNumber(); alert(array[2])}>Find Plads!</button>
         <label type="text" id="Number">Plads Nummer!</label>
         
       </main>
