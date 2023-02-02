@@ -9,8 +9,8 @@ function giveNumber() {
     
   var date = new Date();
   seed = date.getDate()/100;
-  let array = ["Valdemar","Gustav","Leonard","Lukas","Frederik","Oscar","August","Hugo","Kristian","Adam","Emil","Victor","Linus","Ida","Augusta","Alberte","Liva","Siri","Lucca","Kamma","Linnea"]
-  var shuffledArray = array.sort((a, b) => 0.5 - random())
+  let array = ["Valdemar","Gustav","Leonard","Lukas","Frederik","Oscar","August","Hugo","Kristian","Adam","Emil","Victor","Linus","Ida","Augusta","Alberte","Liva","Siri","Lucca","Kamma","Linnea"];
+  var shuffledArray = array.sort((a, b) => 0.5 - random());
   let text = document.getElementById("Name").value;
   document.getElementById("Number").textContent = shuffledArray.indexOf(text)+1;
   console.log(text);
