@@ -33,7 +33,7 @@ export default function Home() {
         </p>
         <input type="text" id="Name"></input> 
         <button onClick={() => giveNumber()}>Find Plads!</button>
-        <label type="text" id="Number">Plads Nummer!</label>
+        <label type="text" size="7" id="Number">Plads Nummer!</label>
         
       </main>
 
