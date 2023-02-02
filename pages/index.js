@@ -23,13 +23,7 @@ export default function Home() {
           Skriv dit navn og tryk på knappen!
         </p>
          <input type="text" id="Name" name="Name"></input>
-        <button id="myButton">Click me</button>
-        <script>
-            const button = document.getElementById("myButton");
-            button.onclick = function() {
-            alert("Button was clicked")
-          };
-         </script>
+        <button onclick="alert('Fucking work')">Click me</button>
       </main>
 
       <Footer />
