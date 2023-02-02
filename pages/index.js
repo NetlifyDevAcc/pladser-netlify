@@ -17,7 +17,6 @@ function giveNumber() {
   console.log(text);
   console.log(seed);
   seed = date.getDate()/100;
-  alert(array[2]);
 }
 
 export default function Home() {
