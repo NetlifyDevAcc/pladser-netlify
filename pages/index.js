@@ -9,14 +9,14 @@ function random() {
 function giveNumber() {
     
   var date = new Date();
-  seed = date.getDate()/100/date.getMonth();
+  seed = date.getDate()/100/date.getMonth()*date.getYear();
   let array = ["Valdemar","Gustav","Leonard","Lukas","Frederik","Oscar","August","Hugo","Kristian","Adam","Emil","Victor","Linus","Ida","Augusta","Alberte","Liva","Siri","Lucca","Kamma","Linnea"];
   var shuffledArray = array.sort((a, b) => 0.5 - random());
   let text = document.getElementById("Name").value;
   document.getElementById("Number").textContent = shuffledArray.indexOf(text)+1;
   console.log(text);
   console.log(seed);
-  seed = date.getDate()/100/date.getMonth();
+  seed = date.getDate()/100/date.getMonth()*date.getYear();
 }
 
 export default function Home() {
@@ -33,7 +33,7 @@ export default function Home() {
         </p>
         <input type="text" id="Name"></input> 
         <button onClick={() => giveNumber()}>Find Plads!</button>
-        <label type="text" size="7" id="Number">Plads Nummer!</label>
+        <label type="text" id="Number">Plads Nummer!</label>
         
       </main>
 
