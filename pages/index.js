@@ -17,6 +17,7 @@ function giveNumber() {
   console.log(text);
   console.log(seed);
   seed = date.getDate()/100;
+  alert(array[2]);
 }
 
 export default function Home() {
@@ -32,7 +33,7 @@ export default function Home() {
           Skriv dit navn og tryk på knappen!
         </p>
         <input type="text" id="Name"></input> 
-        <button onClick={() => giveNumber(); alert(array[2])}>Find Plads!</button>
+        <button onClick={() => giveNumber()}>Find Plads!</button>
         <label type="text" id="Number">Plads Nummer!</label>
         
       </main>
