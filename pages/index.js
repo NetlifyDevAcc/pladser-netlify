@@ -2,7 +2,10 @@ import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 const d = new Date()
-const array = ["Valdemar","Gustav","Leonard","Lukas","Frederik","Oscar","August","Hugo","Kristian","Adam","Emil","Victor","Linus","Ida","Augusta","Alberte","Liva","Siri","Lucca","Kamma","Linnea"]
+let array = ["Valdemar","Gustav","Leonard","Lukas","Frederik","Oscar","August","Hugo","Kristian","Adam","Emil","Victor","Linus","Ida","Augusta","Alberte","Liva","Siri","Lucca","Kamma","Linnea"]
+const button = document.getElementById("myButton");
+
+
 function giveNumber(){
   let text = document.getElementById("Name").value;
   document.getElementById("Number").textContent = text;
