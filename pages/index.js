@@ -8,7 +8,9 @@ function random() {
     return x - Math.floor(x);
 }
 function giveNumber() {
-  var date = new Date()
+    
+  var date = new Date();
+  var seed = date.getDate()/100;
   var shuffledArray = array.sort((a, b) => 0.5 - random())
   let text = document.getElementById("Name").value;
   document.getElementById("Number").textContent = shuffledArray.indexOf(text)+1;
