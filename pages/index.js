@@ -1,21 +1,14 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
-
+const d = new Date()
+const array = ["Valdemar","Gustav","Leonard","Lukas","Frederik","Oscar","August","Hugo","Kristian","Adam","Emil","Victor","Linus","Ida","Augusta","Alberte","Liva","Siri","Lucca","Kamma","Linnea"]
+function giveNumber(){
+  let text = document.getElementById("Name").value;
+  document.getElementById("Number").textContent = text;
+  console.log(text);
+}
 export default function Home() {
-  const [seatNumber, setSeatNumber] = useState('');
-  const [name, setName] = useState('');
-  const [showNumber, setShowNumber] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const index = array.indexOf(name);
-    if (index !== -1) {
-      setSeatNumber(index + 1);
-      setShowNumber(true);
-    }
-  };
-
   return (
     <div className="container">
       <Head>
@@ -27,22 +20,9 @@ export default function Home() {
         <p className="description">
           Skriv dit navn og tryk på knappen!
         </p>
-        <form onSubmit={handleSubmit}>
-          <input 
-            type="text" 
-            id="Name" 
-            name="Name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-          <button id="knap" type="submit">Find Plads</button>
-        </form>
-        {showNumber && (
-          <>
-            <label type="text" id="Number">Plads Nummer: {seatNumber}</label>
-            <label type="text">Version 1.0</label>
-          </>
-        )}
+         <input type="text" id="Name" name="Name"></input>
+        <button onclick="giveNumber()" id="knap">Find Plads</button>
+        <label type="text" id="Number">Plads Nummer</label>
       </main>
 
       <Footer />
