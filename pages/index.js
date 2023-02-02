@@ -23,7 +23,7 @@ export default function Home() {
          <input type="text" id="Name" name="Name"></input>
         <button onclick="giveNumber();" id="knap">Find Plads</button>
         <label type="text" id="Number">Plads Nummer</label>
-        <label type="text">Test 0.2</label>
+        <label type="text">Test 0.3</label>
         <button id="myButton">Click me</button>
         <script>
             const button = document.getElementById("myButton");
