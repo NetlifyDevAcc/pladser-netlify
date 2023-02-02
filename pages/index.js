@@ -24,6 +24,7 @@ export default function Home() {
         </p>
          <input type="text" id="Name" name="Name"></input>
         <button onclick="alert('Fucking work')">Click me</button>
+        <form></form>
       </main>
 
       <Footer />
