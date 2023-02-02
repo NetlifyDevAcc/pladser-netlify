@@ -12,7 +12,7 @@ function giveNumber() {
   var seed = date.getDate();
   var shuffledArray = array.sort((a, b) => 0.5 - random())
   let text = document.getElementById("Name").value;
-  document.getElementById("Number").textContent = shuffeldArray.findIndex(text);
+  document.getElementById("Number").textContent = shuffledArray.findIndex(text);
   console.log(text);
 }
 
