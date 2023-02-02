@@ -4,12 +4,12 @@ import Footer from '@components/Footer'
 const d = new Date()
 let array = ["Valdemar","Gustav","Leonard","Lukas","Frederik","Oscar","August","Hugo","Kristian","Adam","Emil","Victor","Linus","Ida","Augusta","Alberte","Liva","Siri","Lucca","Kamma","Linnea"]
 
-
-function giveNumber(){
+function giveNumber() {
   let text = document.getElementById("Name").value;
   document.getElementById("Number").textContent = text;
   console.log(text);
 }
+
 export default function Home() {
   return (
     <div className="container">
@@ -22,12 +22,12 @@ export default function Home() {
         <p className="description">
           Skriv dit navn og tryk på knappen!
         </p>
-         <input type="text" id="Name" name="Name"></input>
-        <button onclick="alert('Fucking work')">Click me</button>
+        <input type="text" id="Name" name="Name"></input>
+        <button onClick={() => alert('Fucking work')}>Click me</button>
         <form></form>
       </main>
 
       <Footer />
     </div>
-  )
+  );
 }
