@@ -24,6 +24,12 @@ export default function Home() {
         <button onclick="giveNumber();" id="knap">Find Plads</button>
         <label type="text" id="Number">Plads Nummer</label>
         <label type="text">Test 0.2</label>
+        <script>
+            const button = document.getElementById("myButton");
+            button.onclick = function() {
+            alert("Button was clicked");
+          };
+         </script>
         <button onclick="alert('Button was clicked!')">Click me</button>
       </main>
 
