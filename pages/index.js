@@ -14,6 +14,7 @@ function giveNumber() {
   let text = document.getElementById("Name").value;
   document.getElementById("Number").textContent = shuffledArray.indexOf(text)+1;
   console.log(text);
+  console.log(seed);
 }
 
 export default function Home() {
