@@ -16,7 +16,7 @@ function giveNumber() {
     
   var date = new Date();
   seed = date.getWeek()/100/date.getMonth()*date.getYear();
-  let array = ["Valdemar","Gustav","Leonard","Lukas","Frederik","Oscar","August","Hugo","Kristian","Adam","Emil","Victor","Linus","Ida","Augusta","Liva","Siri","Lucca","Kamma","Linnea","Agnes"];
+  let array = ["Valdemar","Alexander","Gustav","Leonard","Lukas","Frederik","Oscar","August","Hugo","Kristian","Adam","Emil","Victor","Linus","Ida","Augusta","Liva","Siri","Lucca","Kamma","Linnea","Agnes"];
   var shuffledArray = array.sort((a, b) => 0.5 - random());
   let text = document.getElementById("Name").value;
   document.getElementById("Number").textContent = shuffledArray.indexOf(text)+1;
